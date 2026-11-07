@@ -1,0 +1,748 @@
+<?xml version='1.0' encoding='utf-8'?>
+<roms>
+  <scalingbase category="Standard" name="AFR from Equivalence Ratio (14.7/x)" units="AFR" expression="14.7/x" to_byte="14.7/x" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Boost Error (x)" units="bar" expression="x" to_byte="x" format="0.0000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Boost Error PSI (x*14.5037738)" units="psi" expression="x*14.5037738" to_byte="x/14.5037738" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Boost Gauge Bar (x-1)" units="bar" expression="x-1" to_byte="x+1" format="0.000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Boost Gauge PSI ((x-1)*14.5037738)" units="psi" expression="(x-1)*14.5037738" to_byte="(x/14.5037738)+1" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Boost Target (x)" units="bar" expression="x" to_byte="x" format="0.000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Boost Target PSI (x*14.5037738)" units="psi" expression="x*14.5037738" to_byte="x/14.5037738" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase name="Degrees (x)" units="deg" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="Engine Load Percent (x*200)" units="%" expression="x*200" to_byte="x/200" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase category="Metric" name="Equivalence Ratio (x)" units="eq ratio" expression="x" to_byte="x" format="0.000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Metric" name="Force N (x)" units="N" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Force lbf (x*0.224808943)" units="lbf" expression="x*0.224808943" to_byte="x/0.224808943" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Fuel Mass mg (x*1000)" units="mg" expression="x*1000" to_byte="x/1000" format="0.0" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase name="Gain (x)" units="gain" expression="x" to_byte="x" format="0.0000" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="Hz (x/5)" units="Hz" expression="x/5" to_byte="x*5" format="0.0" fineincrement="1" coarseincrement="100" system="Universal" />
+  <scalingbase name="Load Ratio (x)" units="ratio" expression="x" to_byte="x" format="0.000" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="MAF Percent ((x/65535)*100)" units="%" expression="(x/65535)*100" to_byte="x*65535/100" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="Multiplier (x)" units="multiplier" expression="x" to_byte="x" format="0.000" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="Percent (x)" units="%" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="Percent (x*100)" units="%" expression="x*100" to_byte="x/100" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase category="Standard" name="Pressure PSI from kPa (x/6.89475729)" units="psi" expression="x/6.89475729" to_byte="x*6.89475729" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Pressure kPa (x)" units="kPa" expression="x" to_byte="x" format="0.000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase name="RPM (x)" units="RPM" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase category="Metric" name="Speed (x)" units="km/h" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Speed mph (x*0.621371192)" units="mph" expression="x*0.621371192" to_byte="x/0.621371192" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="Temperature C (x)" units="deg C" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Metric" name="Temperature Delta C (x)" units="deg C" expression="x" to_byte="x" format="0.00" fineincrement="0.5" coarseincrement="2" system="Metric" />
+  <scalingbase category="Standard" name="Temperature F ((x*1.8)+32)" units="deg F" expression="(x*1.8)+32" to_byte="(x-32)/1.8" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Standard" name="Temperature Delta F (x*1.8)" units="deg F" expression="x*1.8" to_byte="x/1.8" format="0.00" fineincrement="1" coarseincrement="5" system="Standard" />
+  <scalingbase name="Throttle Angle (x)" units="deg" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase category="Metric" name="Torque Nm (x)" units="Nm" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Standard" name="Torque lb-ft (x*0.7375621493)" units="lb-ft" expression="x*0.7375621493" to_byte="x/0.7375621493" format="0.00" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase name="UInt16 Raw (x)" units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase name="UInt8 Raw (x)" units="raw" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="10" system="Universal" />
+  <scalingbase category="Metric" name="Wastegate Position mm (x*1000)" units="mm" expression="x*1000" to_byte="x/1000" format="0.0000" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Metric" name="Wastegate Duty % (x*10)" units="%" expression="x*10" to_byte="x/10" format="0.00" fineincrement="1" coarseincrement="10" system="Metric" />
+  <scalingbase category="Metric" name="Opening Area cm^2 (x/100)" units="cm^2" expression="x/100" to_byte="x*100" format="0.0000" fineincrement="0.01" coarseincrement="0.1" system="Metric" />
+  <scalingbase category="Standard" name="Opening Area in^2 (x*0.0015500031)" units="in^2" expression="x*0.0015500031" to_byte="x/0.0015500031" format="0.0000" fineincrement="0.01" coarseincrement="0.1" system="Standard" />
+  <scalingbase category="Metric" name="Pressure MPa (x)" units="MPa" expression="x" to_byte="x" format="0.000" fineincrement="0.01" coarseincrement="0.1" system="Metric" />
+  <scalingbase category="Metric" name="Pressure Bar from MPa (x*10)" units="bar" expression="x*10" to_byte="x/10" format="0.0" fineincrement="0.1" coarseincrement="1" system="Metric" />
+  <scalingbase category="Standard" name="Pressure PSI from MPa (x*145.037738)" units="psi" expression="x*145.037738" to_byte="x/145.037738" format="0.0" fineincrement="1" coarseincrement="10" system="Standard" />
+  <scalingbase category="Metric" name="MAP Sensor Gain kPa per V (x*0.399993896484375)" units="kPa/V" expression="x*0.399993896484375" to_byte="x/0.399993896484375" format="0.000" fineincrement="0.4" coarseincrement="4" system="Metric" />
+  <scalingbase category="Standard" name="MAP Sensor Gain psi per V (x*0.058014209839902)" units="psi/V" expression="x*0.058014209839902" to_byte="x/0.058014209839902" format="0.000" fineincrement="0.1" coarseincrement="1" system="Standard" />
+  <scalingbase category="Metric" name="MAP Sensor Offset kPa (-(x*0.25))" units="kPa" expression="-(x*0.25)" to_byte="-(x*4)" format="0.00" fineincrement="0.25" coarseincrement="2.5" system="Metric" />
+  <scalingbase category="Standard" name="MAP Sensor Offset psi (-(x*0.036259434425))" units="psi" expression="-(x*0.036259434425)" to_byte="-(x/0.036259434425)" format="0.00" fineincrement="0.04" coarseincrement="0.4" system="Standard" />
+  <scalingbase name="Degrees per Control Update (x)" units="deg/update" expression="x" to_byte="x" format="0.000" fineincrement="0.01" coarseincrement="0.1" system="Universal" />
+  <rom>
+    <romid>
+      <xmlid>VR30-4GN2C</xmlid>
+      <caseid>14GN2C00000</caseid>
+      <internalidaddress>010404</internalidaddress>
+      <internalidstring>14GN2C00000</internalidstring>
+      <ecuid>SH72543_14GN2C</ecuid>
+      <year>Unknown</year>
+      <market>Unknown</market>
+      <make>Infiniti</make>
+      <model>Q50/Q60</model>
+      <submodel>VR30DDTT Factory Candidate</submodel>
+      <transmission>Unknown</transmission>
+      <memmodel>R5F72543/SH7254R</memmodel>
+      <endian>Big</endian>
+      <flashmethod>Nisprog</flashmethod>
+      <filesize>2048kb</filesize>
+      <author>VR30 reverse engineering contributors</author>
+      <version>VR30Defs 0.1.0-rc.1</version>
+    </romid>
+    <checksum type="ChecksumNissanSH72533Add16Xor32Sum32" path="/checksum_classes/" start="0x010400" end="0x200000" sumloc="0x010400" programstart="0x080000" secondarysumloc="0x080000" stdstart="0x010404" stdsumloc="0x0108AC" xorloc="0x0108A0" />
+    <table type="3D" name="AFR Target - Normal" category="01 Fuel Targets" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x038798" swapxy="false">
+      <scaling base="Equivalence Ratio (x)" to_byte="x" />
+      <scaling base="AFR from Equivalence Ratio (14.7/x)" to_byte="14.7/x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x01BC18">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x047758">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the normal mixture request by engine speed and load. In the AFR view, lower values request a richer mixture and higher values request a leaner mixture. The equivalence-ratio view runs in the opposite direction: a larger ratio requests richer operation. The AFR display uses a fixed 14.7 reference. Selection, corrections and limits can change the final request, so measured AFR may differ.</description>
+    </table>
+    <table type="3D" name="AFR Target - Safe Mode" category="01 Fuel Targets" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x038B98" swapxy="false">
+      <scaling base="Equivalence Ratio (x)" to_byte="x" />
+      <scaling base="AFR from Equivalence Ratio (14.7/x)" to_byte="14.7/x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x01BC18">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x047758">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the alternate mixture request when the ECU selects the schedule labelled safe mode. Lower AFR values request richer operation; higher AFR values request leaner operation. Equivalence ratio runs in the opposite direction. This map uses the same fixed 14.7 AFR reference as the normal target. Its exact entry conditions remain unconfirmed, so do not assume a particular fault will select it.</description>
+    </table>
+    <table type="3D" name="Fuel Rail Pressure Target - Normal" category="01 Fuel Targets" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x039C18" swapxy="false">
+      <scaling base="Pressure MPa (x)" to_byte="x" />
+      <scaling base="Pressure Bar from MPa (x*10)" to_byte="x/10" />
+      <scaling base="Pressure PSI from MPa (x*145.037738)" to_byte="x/145.037738" />
+      <table type="X Axis" name="Fuel Mass" storagetype="float" storageaddress="0x0273D8">
+        <scaling base="Fuel Mass mg (x*1000)" to_byte="x/1000" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x027398">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Requests fuel-rail pressure by fuel quantity and engine speed. Raising a cell requests more pressure; lowering it requests less. Low-speed schedules, operating modes and pressure limits can change the selected target. The pump controller determines how to pursue that target, so this table does not directly set pump angle or guarantee measured pressure. Pressure is available in MPa, bar and psi.</description>
+    </table>
+    <table type="3D" name="Fuel Rail Pressure Target - Low RPM" category="01 Fuel Targets" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x03A018" swapxy="false">
+      <scaling base="Pressure MPa (x)" to_byte="x" />
+      <scaling base="Pressure Bar from MPa (x*10)" to_byte="x/10" />
+      <scaling base="Pressure PSI from MPa (x*145.037738)" to_byte="x/145.037738" />
+      <table type="X Axis" name="Fuel Mass" storagetype="float" storageaddress="0x0273D8">
+        <scaling base="Fuel Mass mg (x*1000)" to_byte="x/1000" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x027398">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Provides a pressure-request schedule for the low-speed control family. Raising a cell increases this schedule's request; lowering it reduces the request. Coolant and operating conditions determine when it contributes. The selected target still passes through pressure limits and the pump controller. A change here can have no visible effect while another schedule is selected.</description>
+    </table>
+    <table type="1D" name="Fuel Rail Pressure Target - Lower Limit" category="01 Fuel Targets" storagetype="float" sizex="1" userlevel="3" storageaddress="0x070164">
+      <scaling base="Pressure MPa (x)" to_byte="x" />
+      <scaling base="Pressure Bar from MPa (x*10)" to_byte="x/10" />
+      <scaling base="Pressure PSI from MPa (x*145.037738)" to_byte="x/145.037738" />
+      <description>Sets a minimum pressure-model value on the paths that apply this floor. Raising it raises that floor; lowering it permits a lower value. Some operating paths bypass the floor and later limits can reduce the result. It is not an unconditional minimum measured rail pressure.</description>
+    </table>
+    <table type="2D" name="Desired Boost" category="02 Boost Control" storagetype="float" sizex="16" userlevel="3" storageaddress="0x050FD8">
+      <scaling base="Boost Gauge PSI ((x-1)*14.5037738)" to_byte="(x/14.5037738)+1" />
+      <scaling base="Boost Gauge Bar (x-1)" to_byte="x+1" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x026298">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Supplies an engine-speed-based pressure request to the primary desired-boost channel. Raising a cell raises this curve's request; lowering it lowers the request. Other schedules, blending and downstream limits determine how much reaches the controller. Review the paired request curve too. The gauge display subtracts a fixed one bar; that reference is not live atmospheric pressure. Confirm displayed requests against logs before treating an edit as an equal change in measured boost.</description>
+    </table>
+    <table type="2D" name="Desired Boost - Paired Request" category="02 Boost Control" storagetype="float" sizex="16" userlevel="3" storageaddress="0x0516D8">
+      <scaling base="Boost Gauge PSI ((x-1)*14.5037738)" to_byte="(x/14.5037738)+1" />
+      <scaling base="Boost Gauge Bar (x-1)" to_byte="x+1" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x047DD8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Supplies the pressure request for the channel paired with Desired Boost. Raising or lowering a cell changes this channel's request in the same numerical direction. Its own selection and blending determine its contribution. Changing the primary curve does not automatically change this one. The paired channel's physical role remains unconfirmed. Its gauge display uses the same fixed one-bar reference.</description>
+    </table>
+    <table type="3D" name="Wastegate Air-Temperature Correction" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x02DB58" swapxy="false">
+      <scaling base="Wastegate Position mm (x*1000)" to_byte="x/1000" />
+      <table type="X Axis" name="Air Temp" storagetype="float" storageaddress="0x024DD8">
+        <scaling base="Temperature C (x)" to_byte="x" />
+        <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Adds a temperature-related contribution to wastegate demand after multiplication by an operating-point factor. With a positive factor, raising a cell adds more of this contribution and lowering it adds less. It does not change the desired-boost target. The millimetre display and the physical opening/closing direction remain unconfirmed, so a larger number must not be read as a guaranteed increase or decrease in boost.</description>
+    </table>
+    <table type="3D" name="Wastegate Transient Feedback Correction" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x030358" swapxy="false">
+      <scaling base="Wastegate Duty % (x*10)" to_byte="x/10" />
+      <table type="X Axis" name="Boost Error" storagetype="float" storageaddress="0x025298">
+        <scaling base="Boost Error (x)" to_byte="x" />
+        <scaling base="Boost Error PSI (x*14.5037738)" to_byte="x/14.5037738" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Changes a feedback lookup used during boost-control transients. Raising a cell increases the value returned at that boost error and engine speed; lowering it decreases the value. The ECU combines the result with its other feedback, feed-forward and protection terms. This is a response correction, not the boost-pressure target. The duty display is inherited; a larger cell is not a guaranteed increase in actuator duty or boost.</description>
+    </table>
+    <table type="3D" name="Wastegate Integral Feedback Correction" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x030758" swapxy="false">
+      <scaling base="Wastegate Duty % (x*10)" to_byte="x/10" />
+      <table type="X Axis" name="Boost Error" storagetype="float" storageaddress="0x025298">
+        <scaling base="Boost Error (x)" to_byte="x" />
+        <scaling base="Boost Error PSI (x*14.5037738)" to_byte="x/14.5037738" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Changes the lookup in the source-labelled integral boost-feedback path. Raising a cell increases this lookup's value; lowering it decreases the value. Accumulation, gain selection and other feedback terms determine the resulting correction. This table is separate from the Integral Contribution Multiplier and does not set desired boost. The duty display is inherited; the lookup value is not a direct actuator command.</description>
+    </table>
+    <table type="3D" name="Wastegate Proportional Feedback Correction" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x030B58" swapxy="false">
+      <scaling base="Wastegate Duty % (x*10)" to_byte="x/10" />
+      <table type="X Axis" name="Boost Error" storagetype="float" storageaddress="0x025298">
+        <scaling base="Boost Error (x)" to_byte="x" />
+        <scaling base="Boost Error PSI (x*14.5037738)" to_byte="x/14.5037738" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Changes the lookup in the proportional boost-feedback path at each boost error and engine speed. Raising a cell raises the returned value; lowering it lowers that value. Multiplication and the other control terms determine the resulting contribution. It changes feedback response rather than the requested pressure. The inherited duty display does not make the cell a direct wastegate-duty command.</description>
+    </table>
+    <table type="3D" name="Boost Integral Contribution Multiplier" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x02E358" swapxy="false">
+      <scaling base="Multiplier (x)" to_byte="x" />
+      <table type="X Axis" name="Boost Target" storagetype="float" storageaddress="0x024E18">
+        <scaling base="Boost Target (x)" to_byte="x" />
+        <scaling base="Boost Target PSI (x*14.5037738)" to_byte="x/14.5037738" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Scales the selected integral contribution after the ECU chooses its retained state. A larger positive multiplier makes that signed contribution stronger; a smaller one makes it weaker. A negative state becomes more negative when multiplied by a larger positive value. Separate controls govern how the state accumulates. Mode selection, the feedback enable condition and later limits can override the effect.</description>
+    </table>
+    <table type="3D" name="Boost Derivative Contribution Gain" category="02 Boost Control" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x02FF58" swapxy="false">
+      <scaling base="Gain (x)" to_byte="x" />
+      <table type="X Axis" name="Boost Error" storagetype="float" storageaddress="0x025298">
+        <scaling base="Boost Error (x)" to_byte="x" />
+        <scaling base="Boost Error PSI (x*14.5037738)" to_byte="x/14.5037738" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x024D58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Scales a signed change term in boost feedback. On the map-selected path, a larger positive value strengthens that contribution and a smaller value weakens it. The contribution can be positive or negative, so more gain does not simply mean more boost. Some modes select another coefficient, and the combined feedback correction can be switched off. This is separate from Desired Boost.</description>
+    </table>
+    <table type="2D" name="Boost Correction - Upper Load Reference" category="02 Boost Control" storagetype="float" sizex="16" userlevel="3" storageaddress="0x048118">
+      <scaling base="Multiplier (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x0481D8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the upper reference paired with the Lower Load Reference. Raising it widens the reference range and generally reduces the calculated position within that range when the other inputs stay fixed. Lowering it narrows the range and can increase that position. The atmospheric multiplier then determines the direction of the resulting correction. Keep the upper reference above the lower one; a very small gap makes the calculation sensitive.</description>
+    </table>
+    <table type="2D" name="Boost Correction - Lower Load Reference" category="02 Boost Control" storagetype="float" sizex="16" userlevel="3" storageaddress="0x048058">
+      <scaling base="Multiplier (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x0481D8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the lower reference paired with the Upper Load Reference. Inputs at or below it give zero position for this atmospheric-correction stage. Raising it moves that zero-contribution boundary upward and narrows the reference gap. Lowering it moves the boundary downward and widens the gap. Its effect depends on the upper reference and atmospheric multiplier; it is not a direct boost-pressure limit.</description>
+    </table>
+    <table type="2D" name="Boost Correction - Atmospheric Multiplier" category="02 Boost Control" storagetype="float" sizex="16" userlevel="3" storageaddress="0x050258">
+      <scaling base="Multiplier (x)" to_byte="x" />
+      <table type="X Axis" name="Barometric Pressure" storagetype="float" storageaddress="0x050218">
+        <scaling base="Pressure kPa (x)" to_byte="x" />
+        <scaling base="Pressure PSI from kPa (x/6.89475729)" to_byte="x*6.89475729" />
+      </table>
+      <description>Controls the atmospheric adjustment applied through the upper/lower load-reference calculation. A value of 1 leaves this stage neutral. Values above 1 increase its factor as the calculated position rises; values below 1 reduce it. The curve has no effect at zero position. Later scaling and an output cap can limit the change. This is an internal correction factor, not a pressure target.</description>
+    </table>
+    <table type="3D" name="Ignition Timing - Base" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x03AC18" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048E18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048DD8">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets the normal starting value for the ignition-timing calculation by engine speed and load. Raising a cell raises the base timing value; lowering it lowers that value. The ECU can select an alternate base schedule and then apply corrections, knock response and timing limits. An edit therefore does not guarantee an equal change in final spark timing.</description>
+    </table>
+    <table type="3D" name="Ignition Timing - Maximum Limit" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x037B98" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048E18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048DD8">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets a maximum timing value by engine speed and load. Lowering an active limit restricts the timing calculation; raising it relaxes that limit while other timing controls can still be more restrictive. The source uses 127 as a no-limit value, not a request for 127 degrees of advance. Review the load axis as normalized engine load, not pedal position.</description>
+    </table>
+    <table type="3D" name="Alternate Timing Limit - Mode 1" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x028418" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048D98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048D58">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets the alternate limit value when the ECU selects Mode 1; Mode 4 supplies the other alternate schedule. Raising a cell raises this calculated limit and lowering it lowers the limit. Its full connection to final ignition timing remains unconfirmed. Do not interpret it as a universal knock-retard allowance or assume it is always active.</description>
+    </table>
+    <table type="3D" name="Minimum Timing Contribution - Mode 2" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x028018" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048E18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048DD8">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets a contribution to the normal minimum-timing calculation. Some states select it directly; others use it below the coolant-blend range and blend toward Mode 3 as coolant rises. When this lower bound is active, raising it prevents a lower timing value and lowering it permits a lower value. Other timing inputs and limits still affect the result.</description>
+    </table>
+    <table type="3D" name="Minimum Timing Contribution - Mode 3" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x028C18" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048E18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048DD8">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets the warm-side contribution to the minimum-timing calculation when coolant blending is enabled. Its contribution grows between the coolant blend start and end. Raising an active lower bound prevents a lower timing value; lowering it permits a lower value. States that select Mode 2 directly bypass the blend. Other timing inputs and limits still apply.</description>
+    </table>
+    <table type="3D" name="Alternate Timing Limit - Mode 4" category="03 Ignition Timing" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x028818" swapxy="true">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x048D98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x048D58">
+        <scaling base="Percent (x*100)" to_byte="x/100" />
+      </table>
+      <description>Sets the alternate limit value when the ECU selects Mode 4; Mode 1 supplies the other alternate schedule. Raising a cell raises this calculated limit and lowering it lowers the limit. Its full connection to final ignition timing remains unconfirmed. Do not interpret it as a universal knock-retard allowance or assume it is always active.</description>
+    </table>
+    <table type="1D" name="Minimum Timing Coolant Blend - Start" category="03 Ignition Timing" storagetype="float" sizex="1" userlevel="4" storageaddress="0x0727DC">
+      <scaling base="Temperature C (x)" to_byte="x" />
+      <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      <description>Sets where the coolant-based transition from Mode 2 toward Mode 3 begins. Raising the start delays the transition; lowering it begins sooner. The timing effect depends on the difference between those maps. The ECU uses a minimum blend span of one Celsius degree, and some states bypass the blend by selecting Mode 2 directly.</description>
+    </table>
+    <table type="1D" name="Minimum Timing Coolant Blend - End" category="03 Ignition Timing" storagetype="float" sizex="1" userlevel="4" storageaddress="0x0727D8">
+      <scaling base="Temperature C (x)" to_byte="x" />
+      <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      <description>Sets the warm end of the coolant transition from Mode 2 toward Mode 3. Raising the end spreads the transition over a wider temperature range; lowering it brings in the full Mode 3 contribution sooner. The ECU enforces a minimum span of one Celsius degree. The timing effect depends on the two maps and whether blending is selected.</description>
+    </table>
+    <table type="3D" name="Driver Demand - Drive Force Target 1" category="04 Driver Demand and Torque" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x039798" swapxy="false">
+      <scaling base="Force N (x)" to_byte="x" />
+      <scaling base="Force lbf (x*0.224808943)" to_byte="x/0.224808943" />
+      <table type="X Axis" name="Speed" storagetype="float" storageaddress="0x039BD8">
+        <scaling base="Speed (x)" to_byte="x" />
+        <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      </table>
+      <table type="Y Axis" name="Accelerator Pedal Position" storagetype="float" storageaddress="0x039B98">
+        <scaling base="Percent (x)" to_byte="x" />
+      </table>
+      <description>Converts accelerator-pedal position and vehicle speed into a requested drive force. Raising a cell asks for more drive force at that operating point; lowering it asks for less. The change affects pedal demand, not guaranteed delivered torque. Other demand schedules, traction functions, torque limits and protection can change the final request. The force views retain the source N and lbf conversions.</description>
+    </table>
+    <table type="3D" name="Torque Model - Load and RPM" category="04 Driver Demand and Torque" storagetype="float" sizex="16" sizey="16" userlevel="3" storageaddress="0x03F018" swapxy="false">
+      <scaling base="Torque Nm (x)" to_byte="x" />
+      <scaling base="Torque lb-ft (x*0.7375621493)" to_byte="x/0.7375621493" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x0483D8">
+        <scaling base="Load Ratio (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x047F58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets a torque-model value for each engine-speed and normalized-load region. Raising a cell raises the modeled value where it contributes; lowering it lowers that value. This changes the ECU's model rather than directly commanding more or less engine torque. The oil-protection calculation also uses a reference from this model. Other calculations and torque limits determine the final request. The torque and load displays retain the source conventions.</description>
+    </table>
+    <table type="3D" name="Torque Model - Coolant Multiplier" category="04 Driver Demand and Torque" storagetype="float" sizex="8" sizey="8" userlevel="4" storageaddress="0x05EF50" swapxy="true">
+      <scaling base="Multiplier (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x05EF30">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Coolant Temperature" storagetype="float" storageaddress="0x05F050">
+        <scaling base="Temperature C (x)" to_byte="x" />
+        <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      </table>
+      <description>Multiplies a load-to-torque model result according to coolant temperature and engine speed. A larger positive multiplier raises that modeled value; a smaller one lowers it. A value of 1 leaves this multiplication neutral. Separate rate limits control how quickly the selected multiplier is applied. Changing a torque estimate can affect arbitration, so a larger value does not guarantee more delivered torque.</description>
+    </table>
+    <table type="2D" name="Throttle Angle Ceiling - Body 1" category="04 Driver Demand and Torque" storagetype="float" sizex="8" userlevel="3" storageaddress="0x06BF10" swapxy="false">
+      <scaling base="Throttle Angle (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x06BED0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets an engine-speed-based angle ceiling for software throttle body 1. Raising a point permits a higher angle through this boundary; lowering it applies a lower ceiling. It does not itself request throttle opening, and another limiter or operating mode can determine the final command. The angle view is inherited from the source definition; body numbering is software order.</description>
+    </table>
+    <table type="2D" name="Throttle Angle Ceiling - Body 2" category="04 Driver Demand and Torque" storagetype="float" sizex="8" userlevel="3" storageaddress="0x06BF30" swapxy="false">
+      <scaling base="Throttle Angle (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x06BEF0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets an engine-speed-based angle ceiling for software throttle body 2. Raising a point permits a higher angle through this boundary; lowering it applies a lower ceiling. It does not itself request throttle opening, and another limiter or operating mode can determine the final command. The angle view is inherited from the source definition; body numbering is software order.</description>
+    </table>
+    <table type="1D" name="Additional Throttle Angle Ceiling 1" category="04 Driver Demand and Torque" storagetype="float" sizex="1" userlevel="3" storageaddress="0x0726C4">
+      <scaling base="Throttle Angle (x)" to_byte="x" />
+      <description>Sets an additional angle boundary in throttle control. Raising it relaxes this particular ceiling; lowering it tightens the ceiling. It is not a direct opening request, and the speed-based ceilings, other limits and operating modes can still determine the final command. The exact relationship between the inherited angle coordinate and physical plate angle remains qualified.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 03" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x045898" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027CD8">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026D98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 3, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 04" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x045C98" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027D18">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026DD8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 4, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 05" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x046098" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027D58">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026E18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 5, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 06" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x046498" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027D98">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026E58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 6, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 07" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x046898" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027DD8">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026E98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 7, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 08" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x046C98" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027E18">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026ED8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 8, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 09" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x047098" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027E58">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026F18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 9, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target - Selector 10" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x044098" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027B58">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026C18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the intake cam-angle target for ECU selector state 10, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 03" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x042498" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027998">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026A58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 3, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 04" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x042898" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x0279D8">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026A98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 4, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 05" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x042C98" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027A18">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026AD8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 5, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 06" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x043098" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027A58">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026B18">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 6, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 07" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x043498" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027A98">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026B58">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 7, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 08" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x043898" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027AD8">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026B98">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 8, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 09" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x043C98" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027B18">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x026BD8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 9, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target - Selector 10" category="05 Cam Timing" storagetype="float" sizex="16" sizey="16" userlevel="4" storageaddress="0x040C98" swapxy="false">
+      <scaling base="Degrees (x)" to_byte="x" />
+      <table type="X Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x027818">
+        <scaling base="Engine Load Percent (x*200)" to_byte="x/200" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x0268D8">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the exhaust cam-angle target for ECU selector state 10, by engine speed and normalized load. Raising a cell raises this schedule's numerical target; lowering it lowers the target. The ECU can blend selected schedules and apply fallback logic. The state number is not a confirmed gear or driving mode. The angle convention is inherited, so a numerical increase has not been identified as physical advance or retard.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target Step Limit - Branch A" category="05 Cam Timing" storagetype="float" sizex="8" sizey="8" userlevel="5" storageaddress="0x06D070" swapxy="true">
+      <scaling base="Degrees per Control Update (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x05B4D0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x05BEB0">
+        <scaling base="Load Ratio (x)" to_byte="x" />
+      </table>
+      <description>Limits the step toward the requested intake cam target on the rate branch normally selected when the request is at or above a filtered reference. With positive values, a larger cell permits a larger step and a smaller cell slows the step. Selection can be retained inside a deadband, and the command direction is calculated separately. This branch is not a confirmed advance/retard direction. The display is per control update; its time period is unverified.</description>
+    </table>
+    <table type="3D" name="Intake Cam Target Step Limit - Branch B" category="05 Cam Timing" storagetype="float" sizex="8" sizey="8" userlevel="5" storageaddress="0x06D170" swapxy="true">
+      <scaling base="Degrees per Control Update (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x05B4D0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x05BEB0">
+        <scaling base="Load Ratio (x)" to_byte="x" />
+      </table>
+      <description>Limits the step toward the requested intake cam target on the rate branch normally selected when the request is below a filtered reference. With positive values, a larger cell permits a larger step and a smaller cell slows the step. Selection can be retained inside a deadband, and the command direction is calculated separately. This branch is not a confirmed advance/retard direction. The display is per control update; its time period is unverified.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target Step Limit - Branch A" category="05 Cam Timing" storagetype="float" sizex="8" sizey="8" userlevel="5" storageaddress="0x06CE70" swapxy="true">
+      <scaling base="Degrees per Control Update (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x05B4B0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x05BE90">
+        <scaling base="Load Ratio (x)" to_byte="x" />
+      </table>
+      <description>Limits the step toward the requested exhaust cam target on the rate branch normally selected when the request is at or above a filtered reference. With positive values, a larger cell permits a larger step and a smaller cell slows the step. Selection can be retained inside a deadband, and the command direction is calculated separately. This branch is not a confirmed advance/retard direction. The display is per control update; its time period is unverified.</description>
+    </table>
+    <table type="3D" name="Exhaust Cam Target Step Limit - Branch B" category="05 Cam Timing" storagetype="float" sizex="8" sizey="8" userlevel="5" storageaddress="0x06CF70" swapxy="true">
+      <scaling base="Degrees per Control Update (x)" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x05B4B0">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <table type="Y Axis" name="Normalized Engine Load" storagetype="float" storageaddress="0x05BE90">
+        <scaling base="Load Ratio (x)" to_byte="x" />
+      </table>
+      <description>Limits the step toward the requested exhaust cam target on the rate branch normally selected when the request is below a filtered reference. With positive values, a larger cell permits a larger step and a smaller cell slows the step. Selection can be retained inside a deadband, and the command direction is calculated separately. This branch is not a confirmed advance/retard direction. The display is per control update; its time period is unverified.</description>
+    </table>
+    <table type="2D" name="MAF Calibration - Channel A" category="06 Sensors and Hardware" storagetype="uint16" sizex="64" userlevel="3" storageaddress="0x01104E">
+      <scaling base="MAF Percent ((x/65535)*100)" to_byte="x*65535/100" />
+      <table type="X Axis" name="MAF Sensor Frequency" storagetype="uint16" storageaddress="0x010F4E">
+        <scaling base="Hz (x/5)" to_byte="x*5" />
+      </table>
+      <description>Converts MAF sensor frequency into the normalized reading for software channel A. Raising a point reports a larger reading at that frequency; lowering it reports a smaller reading. Zero-flow correction, fault handling and later limits can change the final published value. The percent view is a normalized sensor scale, not grams per second or throttle opening. Channel A has not been assigned to a physical engine bank.</description>
+    </table>
+    <table type="2D" name="MAF Calibration - Channel B" category="06 Sensors and Hardware" storagetype="uint16" sizex="64" userlevel="3" storageaddress="0x010FCE">
+      <scaling base="MAF Percent ((x/65535)*100)" to_byte="x*65535/100" />
+      <table type="X Axis" name="MAF Sensor Frequency" storagetype="uint16" storageaddress="0x010F4E">
+        <scaling base="Hz (x/5)" to_byte="x*5" />
+      </table>
+      <description>Converts MAF sensor frequency into the normalized reading for software channel B. Raising a point reports a larger reading at that frequency; lowering it reports a smaller reading. Zero-flow correction, fault handling and later limits can change the final published value. The percent view is a normalized sensor scale, not grams per second or throttle opening. Channel B has not been assigned to a physical engine bank.</description>
+    </table>
+    <table type="1D" name="MAF Zero-Flow Offset - Channel A" category="06 Sensors and Hardware" storagetype="uint16" sizex="1" userlevel="4" storageaddress="0x01082C">
+      <scaling base="MAF Percent ((x/65535)*100)" to_byte="x*65535/100" />
+      <scaling base="UInt16 Raw (x)" to_byte="x" />
+      <description>Sets the offset subtracted from software MAF channel A before the channels are combined. Raising this offset subtracts more and lowers the corrected reading; lowering it subtracts less and raises the reading. The percent view is a fraction of the stored sensor scale. Fault substitution can change how the corrected channel is used. Channel A is a software identity, not a confirmed physical bank.</description>
+    </table>
+    <table type="1D" name="MAF Zero-Flow Offset - Channel B" category="06 Sensors and Hardware" storagetype="uint16" sizex="1" userlevel="4" storageaddress="0x01082A">
+      <scaling base="MAF Percent ((x/65535)*100)" to_byte="x*65535/100" />
+      <scaling base="UInt16 Raw (x)" to_byte="x" />
+      <description>Sets the offset subtracted from software MAF channel B before the channels are combined. Raising this offset subtracts more and lowers the corrected reading; lowering it subtracts less and raises the reading. The percent view is a fraction of the stored sensor scale. Fault substitution can change how the corrected channel is used. Channel B is a software identity, not a confirmed physical bank.</description>
+    </table>
+    <table type="1D" name="MAP Sensor Pressure Gain" category="06 Sensors and Hardware" storagetype="uint8" sizex="1" userlevel="3" storageaddress="0x01065B">
+      <scaling base="MAP Sensor Gain kPa per V (x*0.399993896484375)" to_byte="x/0.399993896484375" />
+      <scaling base="MAP Sensor Gain psi per V (x*0.058014209839902)" to_byte="x/0.058014209839902" />
+      <scaling base="UInt8 Raw (x)" to_byte="x" />
+      <description>Sets the slope of the linear manifold absolute-pressure sensor conversion. Raising the gain increases reported pressure at a fixed positive sensor voltage; lowering it decreases the reading. Calibrate it together with the pressure offset using the sensor's specified transfer. This setting changes how the ECU reads pressure; it does not set desired boost. The engineering views show pressure per volt.</description>
+    </table>
+    <table type="1D" name="MAP Sensor Pressure Offset" category="06 Sensors and Hardware" storagetype="uint16" sizex="1" userlevel="3" storageaddress="0x010878">
+      <scaling base="MAP Sensor Offset kPa (-(x*0.25))" to_byte="-(x*4)" />
+      <scaling base="MAP Sensor Offset psi (-(x*0.036259434425))" to_byte="-(x/0.036259434425)" />
+      <scaling base="UInt16 Raw (x)" to_byte="x" />
+      <description>Sets the constant pressure contribution added in the linear MAP conversion. In the signed pressure view, a higher value, including a less-negative value, raises the reported pressure; a lower value lowers it. The raw stored coefficient runs in the opposite direction because the ECU subtracts it. Calibrate the offset with the gain. This is an absolute-pressure sensor calibration, not a boost target.</description>
+    </table>
+    <table type="2D" name="Throttle Model - Body 1 Opening Area" category="06 Sensors and Hardware" storagetype="float" sizex="32" userlevel="3" storageaddress="0x014FD8">
+      <scaling base="Opening Area cm^2 (x/100)" to_byte="x*100" />
+      <scaling base="Opening Area in^2 (x*0.0015500031)" to_byte="x/0.0015500031" />
+      <table type="X Axis" name="Throttle Angle" storagetype="float" storageaddress="0x015358">
+        <scaling base="Throttle Angle (x)" to_byte="x" />
+      </table>
+      <description>Converts the angle coordinate into modeled effective opening area for software throttle body 1. Raising a point tells the air model that more area is available at that coordinate; lowering it reports less area. This changes modeled geometry rather than directly setting the motor command. Review it against the actual throttle hardware. Software body numbering has not been confirmed as a physical left/right bank.</description>
+    </table>
+    <table type="2D" name="Throttle Model - Body 2 Opening Area" category="06 Sensors and Hardware" storagetype="float" sizex="32" userlevel="3" storageaddress="0x015058">
+      <scaling base="Opening Area cm^2 (x/100)" to_byte="x*100" />
+      <scaling base="Opening Area in^2 (x*0.0015500031)" to_byte="x/0.0015500031" />
+      <table type="X Axis" name="Throttle Angle" storagetype="float" storageaddress="0x0153D8">
+        <scaling base="Throttle Angle (x)" to_byte="x" />
+      </table>
+      <description>Converts the angle coordinate into modeled effective opening area for software throttle body 2. Raising a point tells the air model that more area is available at that coordinate; lowering it reports less area. This changes modeled geometry rather than directly setting the motor command. Review it against the actual throttle hardware. Software body numbering has not been confirmed as a physical left/right bank.</description>
+    </table>
+    <table type="1D" name="Vehicle Speed - Main Ceiling" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="3" storageaddress="0x071C34">
+      <scaling base="Speed (x)" to_byte="x" />
+      <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      <description>Sets the main ceiling in the vehicle-speed request and control calculations. Raising it permits a higher ceiling in those calculations; lowering it applies a lower ceiling. Separate speed-based fuel-cut and fuel-resume settings can still intervene. Review all three together; changing this value alone does not establish the final vehicle-speed limit.</description>
+    </table>
+    <table type="1D" name="Vehicle Speed - Fuel Cut" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="3" storageaddress="0x072BA0">
+      <scaling base="Speed (x)" to_byte="x" />
+      <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      <description>Sets the filtered vehicle speed at which this control requests an all-cylinder fuel cut. Raising it moves this speed threshold higher; lowering it moves the threshold lower. The fuel-resume value sets the lower release threshold, and separate RPM eligibility conditions also apply. Keep the cut value above the resume value to retain a switching gap.</description>
+    </table>
+    <table type="1D" name="Vehicle Speed - Fuel Resume" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="3" storageaddress="0x072C10">
+      <scaling base="Speed (x)" to_byte="x" />
+      <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      <description>Sets the filtered vehicle speed below which this speed-based fuel cut releases. Raising it resumes fuel at a higher falling speed; lowering it retains the cut down to a lower speed. Keep it below the Fuel Cut threshold to preserve a switching gap. This setting does not override the separate engine-speed or other cut conditions.</description>
+    </table>
+    <table type="2D" name="Engine Speed Limit by Vehicle Speed" category="07 Protection and Limits" storagetype="float" sizex="8" userlevel="3" storageaddress="0x06B3D0" swapxy="false">
+      <scaling base="RPM (x)" to_byte="x" />
+      <table type="X Axis" name="Vehicle Speed" storagetype="float" storageaddress="0x057B30">
+        <scaling base="Speed (x)" to_byte="x" />
+        <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      </table>
+      <description>Sets a secondary RPM limit according to filtered vehicle speed. Raising a point permits more RPM through this limit; lowering it sets a lower limit in that speed region. Values between speed points are interpolated. Other rev limits and operating conditions can intervene independently, so this curve does not by itself establish the final engine-speed limit.</description>
+    </table>
+    <table type="1D" name="Speed Fuel-Cut RPM Entry Margin" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="3" storageaddress="0x0710E4">
+      <scaling base="RPM (x)" to_byte="x" />
+      <description>Sets the extra RPM needed to enter the speed-cut eligibility state when it was previously clear. Entry requires the paired minimum RPM plus this margin. Once eligible, the state stays set down to the paired minimum RPM. Raising a positive margin increases re-entry RPM without changing that release boundary; zero removes the gap. This is an RPM difference, not a delay or a standalone rev limit.</description>
+    </table>
+    <table type="3D" name="Torque Protection - Coolant and RPM" category="07 Protection and Limits" storagetype="float" sizex="8" sizey="8" userlevel="5" storageaddress="0x067D90" swapxy="false">
+      <scaling base="Torque Nm (x)" to_byte="x" />
+      <scaling base="Torque lb-ft (x*0.7375621493)" to_byte="x/0.7375621493" />
+      <table type="X Axis" name="Coolant Temperature" storagetype="float" storageaddress="0x067D30">
+        <scaling base="Temperature C (x)" to_byte="x" />
+        <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      </table>
+      <table type="Y Axis" name="Engine Speed" storagetype="float" storageaddress="0x067D50">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets a coolant- and RPM-dependent torque-model ceiling. Lowering an active cell tightens this protection branch; raising it relaxes that branch. The charge-air correction is added before the branch competes with the fail-safe ceiling. The stock schedule also restricts cold operation, so this is not only an overheat limit. Other torque limits can mask a change. The torque display is a model convention, not a measurement of delivered torque.</description>
+    </table>
+    <table type="2D" name="Torque Protection - Oil-Temperature Curve" category="07 Protection and Limits" storagetype="float" sizex="16" userlevel="4" storageaddress="0x04CB98">
+      <scaling base="Torque Nm (x)" to_byte="x" />
+      <scaling base="Torque lb-ft (x*0.7375621493)" to_byte="x/0.7375621493" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" storageaddress="0x047798">
+        <scaling base="RPM (x)" to_byte="x" />
+      </table>
+      <description>Sets the RPM-based curve used by the enabled oil-related protection path. The start/full thresholds blend from model-based capacity toward this curve. Raising a point raises the path's output where it contributes; lowering it lowers that output. The curve can exceed the model reference at some speeds, so do not assume it always reduces torque. Other limits can still win. Torque and oil-temperature displays retain the source conventions.</description>
+    </table>
+    <table type="1D" name="Oil-Temperature Torque Blend - Start" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="4" storageaddress="0x070078">
+      <scaling base="Temperature C (x)" to_byte="x" />
+      <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      <description>Sets the lower endpoint of the oil-related torque blend. Below it, the enabled path uses model-based capacity. Above it, the path blends toward the oil-protection curve. When that curve is lower, raising this threshold delays the reduction and lowering it starts the reduction sooner. Keep the Full threshold at least one native unit higher; a smaller or reversed span selects the protection curve directly. The temperature display follows the source convention.</description>
+    </table>
+    <table type="1D" name="Oil-Temperature Torque Blend - Full" category="07 Protection and Limits" storagetype="float" sizex="1" userlevel="4" storageaddress="0x070074">
+      <scaling base="Temperature C (x)" to_byte="x" />
+      <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      <description>Sets where the enabled oil-related path reaches its protection curve. When that curve is lower than model-based capacity, raising this threshold delays the full reduction and lowering it reaches the curve sooner. Keep it at least one native unit above Start; a smaller or reversed span selects the protection curve directly. Raising either endpoint can reduce protection in the affected interval. Temperature units retain the source convention.</description>
+    </table>
+    <table type="2D" name="Torque Protection - Charge-Air Correction" category="07 Protection and Limits" storagetype="float" sizex="8" userlevel="5" storageaddress="0x067E90">
+      <scaling base="Torque Nm (x)" to_byte="x" />
+      <scaling base="Torque lb-ft (x*0.7375621493)" to_byte="x/0.7375621493" />
+      <table type="X Axis" name="Charge-Air Temperature" storagetype="float" storageaddress="0x067D10">
+        <scaling base="Temperature C (x)" to_byte="x" />
+        <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      </table>
+      <description>Adds a temperature-dependent correction to the coolant/RPM torque ceiling. Zero leaves that ceiling unchanged. Positive values raise it and negative values lower it. A change affects the selected protection ceiling only while this combined branch is the more restrictive candidate. Another limit can mask it. The temperature and torque views retain the source model conventions.</description>
+    </table>
+    <table type="2D" name="Torque Protection - Driver Thermal Ceiling" category="07 Protection and Limits" storagetype="float" sizex="8" userlevel="5" storageaddress="0x069110">
+      <scaling base="Driver Thermal Protection Torque Ceiling Scaling" to_byte="x" />
+      <table type="X Axis" name="Engine Speed" storagetype="float" sizex="8" storageaddress="0x05AE90">
+        <scaling base="Driver Thermal RPM Scaling" to_byte="x" />
+      </table>
+      <description>Supplies an RPM-based torque-model ceiling when its admission condition is active. Lowering a cell tightens this candidate; raising it relaxes the candidate. Zero means a zero ceiling, not a disabled monitor. Results at or above the source threshold near 3276.7 select the no-limit candidate in this branch. Other limits and recovery state can mask or delay a change. The precise admission conditions remain unconfirmed.</description>
+    </table>
+    <table type="3D" name="Cooling Fan - Stage Turn-On Temperatures" category="08 Cooling Fans" storagetype="float" sizex="2" sizey="5" userlevel="4" storageaddress="0x0727EC" swapxy="false">
+      <scaling base="Temperature C (x)" to_byte="x" />
+      <scaling base="Temperature F ((x*1.8)+32)" to_byte="(x-32)/1.8" />
+      <table type="Static X Axis" name="Operating Mode (0=Normal, 1=Alternate)" sizex="2">
+        <data>0</data>
+        <data>1</data>
+      </table>
+      <table type="Static Y Axis" name="Fan Temperature Stage" sizey="5">
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+        <data>4</data>
+        <data>5</data>
+      </table>
+      <description>Sets the turn-on temperature for each coolant fan stage in two software states. Lowering a threshold engages that stage sooner; raising it delays engagement. The matching temperature hysteresis controls when an active stage releases. Stages select duty-table columns; they are discrete steps, not an interpolated curve. The alternate state is not a confirmed named driving mode, and other fan demands can override this request.</description>
+    </table>
+    <table type="1D" name="Cooling Fan - Temperature Hysteresis" category="08 Cooling Fans" storagetype="float" sizex="1" userlevel="4" storageaddress="0x0700EC">
+      <scaling base="Temperature Delta C (x)" to_byte="x" />
+      <scaling base="Temperature Delta F (x*1.8)" to_byte="x/1.8" />
+      <description>Sets how far coolant must fall below a stage's turn-on temperature before that active stage releases. A larger positive value keeps the stage active longer as temperature falls; a smaller value narrows the switching gap. It does not change initial turn-on. The Fahrenheit view is a temperature difference and has no 32-degree offset. Other fan demands can keep the final command higher.</description>
+    </table>
+    <table type="3D" name="Cooling Fan Duty - Normal State" category="08 Cooling Fans" storagetype="float" sizex="6" sizey="4" userlevel="4" storageaddress="0x06D8F0" swapxy="false">
+      <scaling base="Percent (x*100)" to_byte="x/100" />
+      <table type="Static X Axis" name="Fan Stage (0=Below Stage 1)" sizex="6">
+        <data>0</data>
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+        <data>4</data>
+        <data>5</data>
+      </table>
+      <table type="Static Y Axis" name="Vehicle Speed Band (0-3)" sizey="4">
+        <data>0</data>
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+      </table>
+      <description>Sets requested fan duty for each coolant stage and vehicle-speed band in the normal software state. Raising an active cell requests more duty; lowering it requests less. The percent view displays the request fraction. Stages and bands select discrete cells without interpolation. Full-demand overrides, low-stage inhibition and other fan demands can replace this request. Requested duty is not measured fan RPM.</description>
+    </table>
+    <table type="3D" name="Cooling Fan Duty - Alternate State" category="08 Cooling Fans" storagetype="float" sizex="6" sizey="4" userlevel="4" storageaddress="0x06D950" swapxy="false">
+      <scaling base="Percent (x*100)" to_byte="x/100" />
+      <table type="Static X Axis" name="Fan Stage (0=Below Stage 1)" sizex="6">
+        <data>0</data>
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+        <data>4</data>
+        <data>5</data>
+      </table>
+      <table type="Static Y Axis" name="Vehicle Speed Band (0-3)" sizey="4">
+        <data>0</data>
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+      </table>
+      <description>Sets requested fan duty for each coolant stage and vehicle-speed band in the alternate software state. Raising an active cell requests more duty; lowering it requests less. Cells are selected by stage and speed band without interpolation. Internal conditions select this table; they have not been assigned to a named driving mode. Full-demand overrides and later fan-demand selection can mask an edit.</description>
+    </table>
+    <table type="2D" name="Cooling Fan - Speed-Band Thresholds" category="08 Cooling Fans" storagetype="float" sizex="3" userlevel="4" storageaddress="0x06E588">
+      <scaling base="Speed (x)" to_byte="x" />
+      <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      <table type="Static X Axis" name="Speed Boundary" sizex="3">
+        <data>1</data>
+        <data>2</data>
+        <data>3</data>
+      </table>
+      <description>Sets the three speed boundaries that select four duty-table rows. Lowering a threshold selects the next band at a lower rising speed; raising it keeps the previous band selected longer. The resulting duty change depends on the affected rows. Separate hysteresis retains an active band as speed falls. These are selection thresholds, not direct fan-duty values.</description>
+    </table>
+    <table type="1D" name="Cooling Fan - Speed-Band Hysteresis" category="08 Cooling Fans" storagetype="float" sizex="1" userlevel="4" storageaddress="0x0700F0">
+      <scaling base="Speed (x)" to_byte="x" />
+      <scaling base="Speed mph (x*0.621371192)" to_byte="x/0.621371192" />
+      <description>Sets how far speed may fall below a band-entry threshold before the active band releases. A larger positive value retains the higher band farther into falling speed; a smaller value narrows that gap. Initial entry on rising speed is unchanged. The fan-duty effect depends on the selected rows, and other fan demands can override it.</description>
+    </table>
+  </rom>
+  <scalingbase name="Driver Thermal Protection Torque Ceiling Scaling" units="N m" expression="x" to_byte="x" format="0.00" fineincrement="1" coarseincrement="1" system="Universal" />
+  <scalingbase name="Driver Thermal RPM Scaling" units="RPM" expression="x" to_byte="x" format="0" fineincrement="1" coarseincrement="1" system="Universal" />
+</roms>

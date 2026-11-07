@@ -1,0 +1,6 @@
+* text=auto eol=lf
+/*.xml -text
+/CALIBRATION_GUIDE.md -text
+/COPYING -text
+/LICENSES/*.txt -text
+/checksum/src/**/*.java -text
